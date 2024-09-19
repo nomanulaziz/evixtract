@@ -1,0 +1,32 @@
+# Sample Log File - Malicious Activity and Normal Logs
+
+2024-09-08 08:00:01 INFO System startup completed successfully
+2024-09-08 08:05:22 INFO User 'admin' logged in successfully from IP 192.168.1.10
+2024-09-08 08:15:22 INFO User 'admin' accessed /var/log/syslog
+2024-09-08 08:16:00 WARNING Failed login attempt for user 'guest' from IP 192.168.1.11
+2024-09-08 08:17:30 WARNING Failed password attempt for user 'admin' from IP 192.168.1.12
+2024-09-08 08:18:45 INFO User 'admin' logged in successfully from IP 192.168.1.12
+2024-09-08 08:20:10 ERROR Unauthorized access attempt to /etc/passwd by user 'admin' from IP 192.168.1.12
+2024-09-08 08:21:35 INFO File /home/user/important.txt renamed by user 'admin'
+2024-09-08 08:22:00 WARNING Suspicious file modification detected: /home/user/important.txt - Changes in file permissions
+2024-09-08 08:23:20 ERROR Connection refused to service on port 22 from IP 192.168.1.14
+2024-09-08 08:24:00 INFO User 'admin' logged out from IP 192.168.1.12
+2024-09-08 08:25:15 WARNING Too many authentication failures for user 'admin' from IP 192.168.1.13
+2024-09-08 08:26:50 INFO User 'admin' logged in successfully from IP 192.168.1.13
+2024-09-08 08:27:25 ERROR Possible buffer overflow attack detected in /var/log/syslog
+2024-09-08 08:28:00 WARNING Unauthorized modification attempt to system configuration file /etc/sysctl.conf by user 'admin'
+2024-09-08 08:29:45 ERROR Disk I/O error on /dev/sda1 - Possible signs of a ransomware attack
+2024-09-08 08:30:15 INFO User 'admin' logged out from IP 192.168.1.13
+2024-09-08 08:31:00 ERROR CRITICAL: Denial of Service (DoS) attack detected - SYN flood on port 80
+2024-09-08 08:32:25 WARNING Port scan detected from IP 192.168.1.15
+2024-09-08 08:33:10 ERROR Unexpected file creation in /var/tmp by user 'admin'
+2024-09-08 08:34:00 INFO File /home/user/important.txt changed permissions to 777
+2024-09-08 08:35:30 WARNING Deleted file detected: /home/user/sensitive_data.log
+2024-09-08 08:36:15 INFO SSHD: [preauth] - Accepted password for user 'admin' from IP 192.168.1.16
+2024-09-08 08:37:00 ERROR Bad protocol error in network service
+2024-09-08 08:38:45 WARNING Key too large error in SSH key exchange
+2024-09-08 08:39:30 INFO System compromised - detected malware activity
+2024-09-08 08:45:00 INFO Backup of /home/user/ completed successfully
+2024-09-08 08:50:10 INFO System update installed: security patches applied
+2024-09-08 08:55:00 INFO User 'admin' initiated system shutdown
+2024-09-08 09:00:00 INFO System shutdown completed successfully
