@@ -19,34 +19,34 @@ Make sure you have Python 3.x installed on your system.
 
 ### Step 2: Install Dependencies
 1.	Clone this repository:
-  - `git clone https://github.com/nomanulaziz/email_sage.git`
-  - `cd email_sage`
+  - `git clone https://github.com/nomanulaziz/evixtract.git`
+  - `cd evixtract`
 2.	Install the required dependencies:
   - `pip install -r requirements.txt`
 
 ### Step 3: Run the Application
 You can run the main application using the following command:
-`python evixtract.py –help`
+`python main.py –help`
 
 
 ## Commands
 To use different features of EvixTract, refer to the following commands:
 -	**Acquire Data From a Device:**
-  `python evixtract.py --acquire --device mydisk.dd --output test.img`
+  `python main.py --acquire --device mydisk.dd --output test.img`
 -	**Create a Disk Image:**
-  `python evixtract.py --imaging --device mydisk.dd --output forensic.img`
+  `python main.py --imaging --device mydisk.dd --output forensic.img`
 
 -	**Analyze the Filesystem:**
-  `python evixtract.py --analyze --input output.img`
+  `python main.py --analyze --input output.img`
 
 -	**Extract Metadata:**
-  `python evixtract.py --extract-metadata --input output.img`
+  `python main.py --extract-metadata --input output.img`
 
 -	**Capture Network Packets:**
-  `python evixtract.py --capture --packet-count 10 --packet-output capture.pcap`
+  `python main.py --capture --packet-count 10 --packet-output capture.pcap`
 
 -	**Analyze System Logs:**
-  `python evixtract.py --log-analysis --log-file syslog.log --output suspicious_logs.txt`
+  `python main.py --log-analysis --log-file syslog.log --output suspicious_logs.txt`
 
 -	**Full Workflow:**
-  `python evixtract.py --acquire --device mydisk.dd --output test.img --imaging --analyze --extract-metadata`
+  `python main.py --acquire --device mydisk.dd --output test.img --imaging --analyze --extract-metadata`
